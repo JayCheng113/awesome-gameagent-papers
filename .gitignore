@@ -1,0 +1,9 @@
+# Superpowers working docs — not part of the published list
+docs/superpowers/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
