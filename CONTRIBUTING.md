@@ -29,7 +29,8 @@ fixed order:
 
 Rules:
 
-- **Date** `[YYYY/MM]` first (use the first public/arXiv date).
+- **Date** `[YYYY/MM]` first. Use the **first public date** (e.g. the arXiv v1 / official
+  announcement month), which may differ from the month implied by the arXiv ID.
 - **Title** in bold; **Venue** in italics (`*NeurIPS 2023*`, `*ICLR 2024*`, or `*arXiv*`).
 - **Link group**: include only links that exist. Omit `[[code]]` / `[[project]]` when
   there is none. Always include a `[[paper]]` link.
