@@ -26,25 +26,25 @@ actively-maintained, community-driven list — contributions are welcome via
 <tr><td colspan="2"><a href="#1-surveys">1. Surveys</a></td></tr>
 <tr><td colspan="2"><a href="#2-core-capabilities">2. Core Capabilities</a></td></tr>
 <tr>
-    <td>&ensp;<a href="#21-perception--world-modeling">2.1 Perception & World Modeling</a></td>
-    <td>&ensp;<a href="#22-planning--reasoning">2.2 Planning & Reasoning</a></td>
+    <td>&ensp;<a href="#21-perception--world-modeling">2.1 Perception &amp; World Modeling</a></td>
+    <td>&ensp;<a href="#22-planning--reasoning">2.2 Planning &amp; Reasoning</a></td>
 </tr>
 <tr>
     <td>&ensp;<a href="#23-memory">2.3 Memory</a></td>
-    <td>&ensp;<a href="#24-skill-learning--curriculum">2.4 Skill Learning & Curriculum</a></td>
+    <td>&ensp;<a href="#24-skill-learning--curriculum">2.4 Skill Learning &amp; Curriculum</a></td>
 </tr>
 <tr>
-    <td>&ensp;<a href="#25-tool-use--code-as-action">2.5 Tool Use & Code-as-Action</a></td>
+    <td>&ensp;<a href="#25-tool-use--code-as-action">2.5 Tool Use &amp; Code-as-Action</a></td>
     <td></td>
 </tr>
-<tr><td colspan="2"><a href="#3-multi-agent--social-games">3. Multi-Agent & Social Games</a></td></tr>
-<tr><td colspan="2"><a href="#4-benchmarks--environments">4. Benchmarks & Environments</a></td></tr>
+<tr><td colspan="2"><a href="#3-multi-agent--social-games">3. Multi-Agent &amp; Social Games</a></td></tr>
+<tr><td colspan="2"><a href="#4-benchmarks--environments">4. Benchmarks &amp; Environments</a></td></tr>
 <tr><td colspan="2"><a href="#contributing">Contributing</a> &ensp;|&ensp; <a href="#license">License</a></td></tr>
 </table>
 
 ## Latest Update
 
-- 2026/06/25: Initial release — skeleton + ~20 vetted seed papers across 8 capability topics 🔥
+- 2026/06/25: Initial release — skeleton + ~18 vetted seed papers across 8 capability topics 🔥
 
 ## 1. Surveys
 
