@@ -14,11 +14,14 @@ environments. This repository collects **must-read papers on LLM / foundation-mo
 game agents**, deliberately scoped to the foundation-model lineage rather than the broader
 classic RL / search / game-AI tradition.
 
-Papers are organized **by capability / topic** (perception, planning, memory, skill
-learning, tool use, multi-agent play), plus surveys and benchmarks. Game environments are
-carried as inline `#tags`, so a paper may be cross-listed across sections. This is an
-actively-maintained, community-driven list — contributions are welcome via
-[pull request](CONTRIBUTING.md). For mistakes or suggestions, please open an issue.
+Papers are organized in a **hybrid taxonomy**: cross-domain landmark work sits under
+*Core Capabilities* (perception, planning, memory, skill learning, tool use), while the
+bulk of the literature is grouped **by environment / domain** (Minecraft & open-world,
+social simulation, NPC dialogue & commercial agents, general computer control,
+benchmarks & environments). Game environments and mechanisms are carried as inline
+`#tags`, so a paper may be cross-listed across sections. This is an actively-maintained,
+community-driven list — contributions are welcome via [pull request](CONTRIBUTING.md).
+For mistakes or suggestions, please open an issue.
 
 ## Contents
 
@@ -37,14 +40,38 @@ actively-maintained, community-driven list — contributions are welcome via
     <td>&ensp;<a href="#25-tool-use--code-as-action">2.5 Tool Use &amp; Code-as-Action</a></td>
     <td></td>
 </tr>
-<tr><td colspan="2"><a href="#3-multi-agent--social-games">3. Multi-Agent &amp; Social Games</a></td></tr>
-<tr><td colspan="2"><a href="#4-benchmarks--environments">4. Benchmarks &amp; Environments</a></td></tr>
+<tr><td colspan="2"><a href="#3-minecraft--open-world-embodied-agents">3. Minecraft &amp; Open-World Embodied Agents</a></td></tr>
+<tr>
+    <td>&ensp;<a href="#31-foundation-policies--vla">3.1 Foundation Policies &amp; VLA</a></td>
+    <td>&ensp;<a href="#32-planning--reasoning">3.2 Planning &amp; Reasoning</a></td>
+</tr>
+<tr>
+    <td>&ensp;<a href="#33-memory--self-evolution">3.3 Memory &amp; Self-Evolution</a></td>
+    <td>&ensp;<a href="#34-multi-agent--collaboration">3.4 Multi-Agent &amp; Collaboration</a></td>
+</tr>
+<tr>
+    <td>&ensp;<a href="#35-tooling--benchmarks">3.5 Tooling &amp; Benchmarks</a></td>
+    <td></td>
+</tr>
+<tr><td colspan="2"><a href="#4-multi-agent-social-simulation--communication-games">4. Multi-Agent, Social Simulation &amp; Communication Games</a></td></tr>
+<tr>
+    <td>&ensp;<a href="#41-agent-societies--social-simulation">4.1 Agent Societies &amp; Social Simulation</a></td>
+    <td>&ensp;<a href="#42-communication--strategic-games">4.2 Communication &amp; Strategic Games</a></td>
+</tr>
+<tr><td colspan="2"><a href="#5-npc-dialogue--commercial-agents">5. NPC Dialogue &amp; Commercial Agents</a></td></tr>
+<tr><td colspan="2"><a href="#6-general-computer--3d-world-control">6. General Computer &amp; 3D-World Control</a></td></tr>
+<tr><td colspan="2"><a href="#7-benchmarks--environments">7. Benchmarks &amp; Environments</a></td></tr>
+<tr>
+    <td>&ensp;<a href="#71-interactive-environments--benchmarks">7.1 Interactive Environments &amp; Benchmarks</a></td>
+    <td>&ensp;<a href="#72-classic-pre-llm-milestones">7.2 Classic Pre-LLM Milestones</a></td>
+</tr>
 <tr><td colspan="2"><a href="#contributing">Contributing</a> &ensp;|&ensp; <a href="#license">License</a></td></tr>
 </table>
 
 ## Latest Update
 
-- 2026/06/25: Initial release — skeleton + ~18 vetted seed papers across 8 capability topics 🔥
+- 2026/06/25: Major expansion — ~75 vetted papers across 7 sections; added Minecraft, social-simulation, NPC/commercial, and environment sections 🔥
+- 2026/06/25: Initial release — skeleton + ~18 vetted seed papers across 8 capability topics
 
 ## 1. Surveys
 
@@ -54,45 +81,135 @@ actively-maintained, community-driven list — contributions are welcome via
 
 ### 2.1 Perception & World Modeling
 
-- [2024/03] **Scaling Instructable Agents Across Many Simulated Worlds (SIMA)** *arXiv* [[paper](https://arxiv.org/abs/2404.10179)] `#3d-worlds` `#vlm`
 - [2024/02] **Genie: Generative Interactive Environments** *ICML 2024* [[paper](https://arxiv.org/abs/2402.15391)] `#world-model` `#generation`
-- [2022/06] **MineDojo: Building Open-Ended Embodied Agents with Internet-Scale Knowledge** *NeurIPS 2022* [[paper](https://arxiv.org/abs/2206.08853)][[code](https://github.com/MineDojo/MineDojo)][[project](https://minedojo.org/)] `#minecraft` `#benchmark`
+- [2024/03] **Scaling Instructable Agents Across Many Simulated Worlds (SIMA)** *arXiv* [[paper](https://arxiv.org/abs/2404.10179)] `#3d-worlds` `#vlm`
 
 ### 2.2 Planning & Reasoning
 
 - [2022/10] **ReAct: Synergizing Reasoning and Acting in Language Models** *ICLR 2023* [[paper](https://arxiv.org/abs/2210.03629)][[code](https://github.com/ysymyth/ReAct)] `#planning` `#text-game`
-- [2023/02] **Describe, Explain, Plan and Select: Interactive Planning with Large Language Models Enables Open-World Multi-Task Agents (DEPS)** *NeurIPS 2023* [[paper](https://arxiv.org/abs/2302.01560)] `#minecraft` `#planning`
 - [2023/05] **SwiftSage: A Generative Agent with Fast and Slow Thinking for Complex Interactive Tasks** *NeurIPS 2023* [[paper](https://arxiv.org/abs/2305.17390)] `#text-game` `#planning`
-- [2023/05] **Ghost in the Minecraft: Generally Capable Agents for Open-World Environments via Large Language Models with Text-based Knowledge and Memory (GITM)** *arXiv* [[paper](https://arxiv.org/abs/2305.17144)] `#minecraft` `#planning` `#memory`
 
 ### 2.3 Memory
 
 - [2023/04] **Generative Agents: Interactive Simulacra of Human Behavior** *UIST 2023* [[paper](https://arxiv.org/abs/2304.03442)] `#memory` `#social-sim`
-- [2023/11] **JARVIS-1: Open-World Multi-task Agents with Memory-Augmented Multimodal Language Models** *IEEE TPAMI 2025* [[paper](https://arxiv.org/abs/2311.05997)][[code](https://github.com/CraftJarvis/JARVIS-1)] `#minecraft` `#memory`
-- [2024/08] **Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks** *NeurIPS 2024* [[paper](https://arxiv.org/abs/2408.03615)] `#minecraft` `#memory`
 
 ### 2.4 Skill Learning & Curriculum
 
 - [2023/05] **Voyager: An Open-Ended Embodied Agent with Large Language Models** *TMLR 2024* [[paper](https://arxiv.org/abs/2305.16291)][[code](https://github.com/MineDojo/Voyager)][[project](https://voyager.minedojo.org/)] `#minecraft` `#skill-learning` `#tool-use`
-- [2023/05] **Ghost in the Minecraft: Generally Capable Agents for Open-World Environments via Large Language Models with Text-based Knowledge and Memory (GITM)** *arXiv* [[paper](https://arxiv.org/abs/2305.17144)] `#minecraft` `#skill-learning`
+- [2026/05] **Ratchet: A Minimal Hygiene Recipe for Self-Evolving LLM Agents** *arXiv* [[paper](https://arxiv.org/abs/2605.22148)] `#self-evolving` `#skill-learning`
 
 ### 2.5 Tool Use & Code-as-Action
 
 - [2023/05] **Voyager: An Open-Ended Embodied Agent with Large Language Models** *TMLR 2024* [[paper](https://arxiv.org/abs/2305.16291)][[code](https://github.com/MineDojo/Voyager)][[project](https://voyager.minedojo.org/)] `#minecraft` `#code-as-action`
 - [2024/02] **Executable Code Actions Elicit Better LLM Agents (CodeAct)** *ICML 2024* [[paper](https://arxiv.org/abs/2402.01030)][[code](https://github.com/xingyaoww/code-act)] `#code-as-action` `#tool-use`
-- [2024/03] **Cradle: Empowering Foundation Agents Towards General Computer Control** *arXiv* [[paper](https://arxiv.org/abs/2403.03186)][[code](https://github.com/BAAI-Agents/Cradle)] `#gui-control` `#tool-use`
 
-## 3. Multi-Agent & Social Games
+## 3. Minecraft & Open-World Embodied Agents
 
-- [2023/09] **Exploring Large Language Models for Communication Games: An Empirical Study on Werewolf** *arXiv* [[paper](https://arxiv.org/abs/2309.04658)] `#social-deduction` `#multi-agent`
-- [2022/11] **Human-level play in the game of Diplomacy by combining language models with strategic reasoning (CICERO)** *Science* [[paper](https://www.science.org/doi/10.1126/science.ade9097)] `#diplomacy` `#multi-agent`
-- [2023/04] **Generative Agents: Interactive Simulacra of Human Behavior** *UIST 2023* [[paper](https://arxiv.org/abs/2304.03442)] `#social-sim` `#multi-agent`
+### 3.1 Foundation Policies & VLA
 
-## 4. Benchmarks & Environments
+- [2022/06] **Video PreTraining (VPT): Learning to Act by Watching Unlabeled Online Videos** *NeurIPS 2022* [[paper](https://arxiv.org/abs/2206.11795)] `#minecraft` `#foundation-policy`
+- [2023/06] **STEVE-1: A Generative Model for Text-to-Behavior in Minecraft** *NeurIPS 2023* [[paper](https://arxiv.org/abs/2306.00937)][[code](https://github.com/Shalev-Lifshitz/STEVE-1)][[project](https://sites.google.com/view/steve-1)] `#minecraft` `#foundation-policy`
+- [2023/10] **GROOT: Learning to Follow Instructions by Watching Gameplay Videos** *arXiv* [[paper](https://arxiv.org/abs/2310.08235)][[code](https://github.com/CraftJarvis/GROOT)][[project](https://craftjarvis.github.io/GROOT/)] `#minecraft` `#foundation-policy`
+- [2024/03] **MineDreamer: Learning to Follow Instructions via Chain-of-Imagination for Simulated-World Control** *arXiv* [[paper](https://arxiv.org/abs/2403.12037)][[code](https://github.com/Zhoues/MineDreamer)] `#minecraft` `#world-model`
+- [2024/06] **OmniJARVIS: Unified Vision-Language-Action Tokenization Enables Open-World Instruction Following Agents** *NeurIPS 2024* [[paper](https://arxiv.org/abs/2407.00114)] `#minecraft` `#vla`
+- [2024/10] **ROCKET-1: Mastering Open-World Interaction with Visual-Temporal Context Prompting** *arXiv* [[paper](https://arxiv.org/abs/2410.17856)][[project](https://craftjarvis.github.io/ROCKET-1)] `#minecraft` `#vla`
+- [2024/12] **GROOT-2: Weakly Supervised Multi-Modal Instruction Following Agents** *arXiv* [[paper](https://arxiv.org/abs/2412.10410)] `#minecraft` `#vla`
+- [2025/02] **Optimus-2: Multimodal Minecraft Agent with Goal-Observation-Action Conditioned Policy** *CVPR 2025* [[paper](https://arxiv.org/abs/2502.19902)][[project](https://cybertronagent.github.io/Optimus-2.github.io/)] `#minecraft` `#vla`
+- [2025/03] **JARVIS-VLA: Post-Training Large-Scale Vision Language Models to Play Visual Games with Keyboards and Mouse** *ACL 2025* [[paper](https://arxiv.org/abs/2503.16365)][[code](https://github.com/CraftJarvis/JarvisVLA)][[project](https://craftjarvis.github.io/JarvisVLA/)] `#minecraft` `#vla`
+- [2025/06] **Optimus-3: Dual-Router Aligned Mixture-of-Experts Agent with Dual-Granularity Reasoning-Aware Policy Optimization** *arXiv* [[paper](https://arxiv.org/abs/2506.10357)] `#minecraft` `#vla`
+- [2025/09] **OpenHA: A Series of Open-Source Hierarchical Agentic Models in Minecraft** *arXiv* [[paper](https://arxiv.org/abs/2509.13347)] `#minecraft` `#foundation-policy`
 
-- [2020/10] **ALFWorld: Aligning Text and Embodied Environments for Interactive Learning** *ICLR 2021* [[paper](https://arxiv.org/abs/2010.03768)][[code](https://github.com/alfworld/alfworld)][[project](https://alfworld.github.io/)] `#text-game` `#benchmark`
+### 3.2 Planning & Reasoning
+
+- [2023/02] **Describe, Explain, Plan and Select: Interactive Planning with Large Language Models Enables Open-World Multi-Task Agents (DEPS)** *NeurIPS 2023* [[paper](https://arxiv.org/abs/2302.01560)] `#minecraft` `#planning`
+- [2023/03] **Skill Reinforcement Learning and Planning for Open-World Long-Horizon Tasks (Plan4MC)** *arXiv* [[paper](https://arxiv.org/abs/2303.16563)][[project](https://sites.google.com/view/plan4mc)] `#minecraft` `#planning` `#skill-learning`
+- [2023/05] **Ghost in the Minecraft: Generally Capable Agents for Open-World Environments via Large Language Models with Text-based Knowledge and Memory (GITM)** *arXiv* [[paper](https://arxiv.org/abs/2305.17144)] `#minecraft` `#planning` `#memory`
+- [2023/05] **Voyager: An Open-Ended Embodied Agent with Large Language Models** *TMLR 2024* [[paper](https://arxiv.org/abs/2305.16291)][[code](https://github.com/MineDojo/Voyager)][[project](https://voyager.minedojo.org/)] `#minecraft` `#planning` `#skill-learning`
+- [2023/11] **JARVIS-1: Open-World Multi-task Agents with Memory-Augmented Multimodal Language Models** *IEEE TPAMI 2025* [[paper](https://arxiv.org/abs/2311.05997)][[code](https://github.com/CraftJarvis/JARVIS-1)] `#minecraft` `#planning` `#memory`
+- [2023/12] **MP5: A Multi-modal Open-ended Embodied System in Minecraft via Active Perception** *CVPR 2024* [[paper](https://arxiv.org/abs/2312.07472)] `#minecraft` `#planning` `#vlm`
+- [2025/05] **Experience-based Knowledge Correction for Robust Planning in Minecraft (XENON)** *ICLR 2026* [[paper](https://arxiv.org/abs/2505.24157)][[project](https://sjlee-me.github.io/XENON)] `#minecraft` `#planning`
+- [2026/05] **GROW: Aligning GRPO with State-Action Modeling for Open-World VLM Agents** *arXiv* [[paper](https://arxiv.org/abs/2605.20246)] `#minecraft` `#planning` `#vlm`
+- [2026/06] **WISE: A Long-Horizon Agent in Minecraft with Why-Which Reasoning** *arXiv* [[paper](https://arxiv.org/abs/2606.12852)] `#minecraft` `#planning`
+
+### 3.3 Memory & Self-Evolution
+
+- [2024/08] **Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks** *NeurIPS 2024* [[paper](https://arxiv.org/abs/2408.03615)] `#minecraft` `#memory`
+- [2024/11] **MrSteve: Instruction-Following Agents in Minecraft with What-Where-When Memory** *ICLR 2025* [[paper](https://arxiv.org/abs/2411.06736)][[code](https://github.com/frechele/MrSteve)][[project](https://sites.google.com/view/mr-steve)] `#minecraft` `#memory`
+- [2026/04] **Experience Transfer for Multimodal LLM Agents in Minecraft Game (Echo)** *arXiv* [[paper](https://arxiv.org/abs/2604.05533)] `#minecraft` `#memory`
+- [2026/05] **PEAM: Parametric Embodied Agent Memory through Contrastive Internalization of Experience in Minecraft** *arXiv* [[paper](https://arxiv.org/abs/2605.27762)] `#minecraft` `#memory`
+
+### 3.4 Multi-Agent & Collaboration
+
+- [2024/06] **VillagerAgent: A Graph-Based Multi-Agent Framework for Coordinating Complex Task Dependencies in Minecraft** *arXiv* [[paper](https://arxiv.org/abs/2406.05720)] `#minecraft` `#multi-agent`
+- [2024/11] **MindForge: Empowering Embodied Agents with Theory of Mind for Lifelong Cultural Learning** *NeurIPS 2025* [[paper](https://arxiv.org/abs/2411.12977)] `#minecraft` `#multi-agent`
+- [2024/12] **TeamCraft: A Benchmark for Multi-Modal Multi-Agent Systems in Minecraft** *arXiv* [[paper](https://arxiv.org/abs/2412.05255)][[code](https://github.com/teamcraft-bench/teamcraft)] `#minecraft` `#multi-agent` `#benchmark`
+- [2025/09] **PillagerBench: Benchmarking LLM-Based Agents in Competitive Minecraft Team Environments** *arXiv* [[paper](https://arxiv.org/abs/2509.06235)] `#minecraft` `#multi-agent` `#benchmark`
+- [2026/02] **Requesting Expert Reasoning: Augmenting LLM Agents with Learned Collaborative Intervention (AHCE)** *arXiv* [[paper](https://arxiv.org/abs/2602.22546)] `#minecraft` `#multi-agent`
+- [2026/04] **Gated Coordination for Efficient Multi-Agent Collaboration in Minecraft Game** *arXiv* [[paper](https://arxiv.org/abs/2604.18975)] `#minecraft` `#multi-agent`
+
+### 3.5 Tooling & Benchmarks
+
+- [2016/07] **The Malmo Platform for Artificial Intelligence Experimentation** *IJCAI 2016* [[paper](https://www.ijcai.org/Proceedings/16/Papers/643.pdf)][[code](https://github.com/microsoft/malmo)] `#minecraft` `#benchmark`
+- [2019/07] **MineRL: A Large-Scale Dataset of Minecraft Demonstrations** *IJCAI 2019* [[paper](https://arxiv.org/abs/1907.13440)] `#minecraft` `#benchmark`
 - [2022/06] **MineDojo: Building Open-Ended Embodied Agents with Internet-Scale Knowledge** *NeurIPS 2022* [[paper](https://arxiv.org/abs/2206.08853)][[code](https://github.com/MineDojo/MineDojo)][[project](https://minedojo.org/)] `#minecraft` `#benchmark`
+- [2024/12] **MineStudio: A Streamlined Package for Minecraft AI Agent Development** *arXiv* [[paper](https://arxiv.org/abs/2412.18293)][[code](https://github.com/CraftJarvis/MineStudio)] `#minecraft` `#benchmark`
+- [2026/01] **MineNPC-Task: Task Suite for Memory-Aware Minecraft Agents** *arXiv* [[paper](https://arxiv.org/abs/2601.05215)] `#minecraft` `#benchmark` `#memory`
+- [2026/05] **MineExplorer: Evaluating Open-World Exploration of MLLM Agents in Minecraft** *arXiv* [[paper](https://arxiv.org/abs/2605.30931)] `#minecraft` `#benchmark`
+
+## 4. Multi-Agent, Social Simulation & Communication Games
+
+### 4.1 Agent Societies & Social Simulation
+
+- [2023/04] **Generative Agents: Interactive Simulacra of Human Behavior** *UIST 2023* [[paper](https://arxiv.org/abs/2304.03442)] `#social-sim` `#multi-agent` `#memory`
+- [2023/08] **AI Town: A Deployable Starter Kit for Building AI Agent Societies** *GitHub* [[code](https://github.com/a16z-infra/ai-town)] `#social-sim` `#multi-agent`
+- [2023/12] **Generative agent-based modeling with actions grounded in physical, social, or digital space using Concordia** *arXiv* [[paper](https://arxiv.org/abs/2312.03664)] `#social-sim` `#multi-agent`
+- [2024/10] **Project Sid: Many-agent simulations toward AI civilization** *arXiv* [[paper](https://arxiv.org/abs/2411.00114)] `#minecraft` `#social-sim` `#multi-agent`
+- [2026/02] **AIvilization v0: Toward Large-Scale Artificial Social Simulation with a Unified Agent Architecture and Adaptive Agent Profiles** *arXiv* [[paper](https://arxiv.org/abs/2602.10429)] `#social-sim` `#multi-agent`
+- [2026/06] **Agentopia: Long-Term Life Simulation and Learning in Agent Societies** *arXiv* [[paper](https://arxiv.org/abs/2606.07513)] `#social-sim` `#multi-agent`
+- [2026/06] **Emergence World: A Platform for Evaluating Long-Horizon Multi-Agent Autonomy** *arXiv* [[paper](https://arxiv.org/abs/2606.08367)] `#social-sim` `#multi-agent` `#benchmark`
+
+### 4.2 Communication & Strategic Games
+
+- [2022/11] **Human-level play in the game of Diplomacy by combining language models with strategic reasoning (CICERO)** *Science* [[paper](https://www.science.org/doi/10.1126/science.ade9097)] `#diplomacy` `#multi-agent`
+- [2023/09] **Exploring Large Language Models for Communication Games: An Empirical Study on Werewolf** *arXiv* [[paper](https://arxiv.org/abs/2309.04658)] `#social-deduction` `#multi-agent`
+
+## 5. NPC Dialogue & Commercial Agents
+
+- [2024/02] **Driving Generative Agents With Their Personality** *arXiv* [[paper](https://arxiv.org/abs/2402.14879)] `#npc` `#persona`
+- [2024/03] **Ubisoft NEO NPC: Generative-AI-Powered Non-Player Characters** *Ubisoft (GDC 2024)* [[blog](https://news.ubisoft.com/en-us/article/5qXdxhshJBXoanFZApdG3L/how-ubisofts-new-generative-ai-prototype-changes-the-narrative-for-npcs)] `#npc` `#commercial`
+- [2025/01] **NVIDIA ACE: Autonomous AI Companions (PUBG Ally)** *NVIDIA (CES 2025)* [[blog](https://www.nvidia.com/en-us/geforce/news/nvidia-ace-autonomous-ai-companions-pubg-naraka-bladepoint/)] `#npc` `#commercial`
+- [2025/07] **An Empirical Evaluation of AI-Powered Non-Player Characters' Perceived Realism and Performance in Virtual Reality Environments** *arXiv* [[paper](https://arxiv.org/abs/2507.10469)] `#npc` `#evaluation`
+- [2025/10] **Symbolically Scaffolded Play: Designing Role-Sensitive Prompts for Generative NPC Dialogue** *arXiv* [[paper](https://arxiv.org/abs/2510.25820)] `#npc` `#persona`
+- [2025/12] **Vox Deorum: A Hybrid LLM Architecture for 4X / Grand Strategy Game AI — Lessons from Civilization V** *arXiv* [[paper](https://arxiv.org/abs/2512.18564)][[code](https://github.com/vox-deorum/vox-deorum)][[project](https://civitas-john.github.io/publication/2025-vox-deorum)] `#strategy` `#npc`
+- **Convai: Conversational AI Platform for Game Characters** *Product* [[site](https://convai.com/)] `#npc` `#commercial`
+- **Inworld AI: Real-Time AI Engine for Game Characters** *Product* [[site](https://inworld.ai/)] `#npc` `#commercial`
+
+## 6. General Computer & 3D-World Control
+
+- [2024/03] **Scaling Instructable Agents Across Many Simulated Worlds (SIMA)** *arXiv* [[paper](https://arxiv.org/abs/2404.10179)] `#3d-worlds` `#vlm`
+- [2024/03] **Cradle: Empowering Foundation Agents Towards General Computer Control** *arXiv* [[paper](https://arxiv.org/abs/2403.03186)][[code](https://github.com/BAAI-Agents/Cradle)] `#gui-control` `#tool-use`
+- [2025/08] **Pixels to Play: A Foundation Model for 3D Gameplay** *arXiv* [[paper](https://arxiv.org/abs/2508.14295)][[code](https://github.com/elefant-ai/open-p2p)][[project](https://elefant-ai.github.io/open-p2p/)] `#3d-worlds` `#foundation-policy`
+- [2025/11] **SIMA 2: A Generalist Embodied Agent for Virtual Worlds** *Google DeepMind* [[paper](https://arxiv.org/abs/2512.04797)][[blog](https://deepmind.google/blog/sima-2-an-agent-that-plays-reasons-and-learns-with-you-in-virtual-3d-worlds/)] `#3d-worlds` `#vlm`
+
+## 7. Benchmarks & Environments
+
+### 7.1 Interactive Environments & Benchmarks
+
+- [2018/06] **TextWorld: A Learning Environment for Text-based Games** *IJCAI 2018 Workshop* [[paper](https://arxiv.org/abs/1806.11532)] `#text-game` `#benchmark`
+- [2020/06] **The NetHack Learning Environment** *NeurIPS 2020* [[paper](https://arxiv.org/abs/2006.13760)] `#roguelike` `#benchmark`
+- [2020/10] **ALFWorld: Aligning Text and Embodied Environments for Interactive Learning** *ICLR 2021* [[paper](https://arxiv.org/abs/2010.03768)][[code](https://github.com/alfworld/alfworld)][[project](https://alfworld.github.io/)] `#text-game` `#benchmark`
+- [2021/09] **Crafter: Benchmarking the Spectrum of Agent Capabilities** *ICLR 2022* [[paper](https://arxiv.org/abs/2109.06780)][[project](https://danijar.com/crafter)] `#benchmark`
+- [2022/07] **WebShop: Towards Scalable Real-World Web Interaction with Grounded Language Agents** *NeurIPS 2022* [[paper](https://arxiv.org/abs/2207.01206)] `#web` `#benchmark`
 - [2023/10] **SmartPlay: A Benchmark for LLMs as Intelligent Agents** *ICLR 2024* [[paper](https://arxiv.org/abs/2310.01557)][[code](https://github.com/microsoft/SmartPlay)] `#benchmark`
+- [2024/02] **Craftax: A Lightning-Fast Benchmark for Open-Ended Reinforcement Learning** *ICML 2024* [[paper](https://arxiv.org/abs/2402.16801)] `#benchmark`
+- [2026/04] **PokeGym: A Visually-Driven Long-Horizon Benchmark for Vision-Language Models** *arXiv* [[paper](https://arxiv.org/abs/2604.08340)] `#benchmark` `#vlm`
+
+### 7.2 Classic Pre-LLM Milestones
+
+> Included for historical context. These predate the LLM-agent lineage but are frequently-cited references for game-AI agents.
+
+- [2019/10] **Grandmaster level in StarCraft II using multi-agent reinforcement learning (AlphaStar)** *Nature* [[paper](https://doi.org/10.1038/s41586-019-1724-z)] `#starcraft` `#rl`
+- [2019/12] **Dota 2 with Large Scale Deep Reinforcement Learning (OpenAI Five)** *arXiv* [[paper](https://arxiv.org/abs/1912.06680)] `#dota` `#rl`
 
 ## Contributing
 

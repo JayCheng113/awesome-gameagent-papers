@@ -30,13 +30,21 @@ fixed order:
 Rules:
 
 - **Date** `[YYYY/MM]` first. Use the **first public date** (e.g. the arXiv v1 / official
-  announcement month), which may differ from the month implied by the arXiv ID.
+  announcement month), which may differ from the month implied by the arXiv ID. For
+  **evergreen commercial products** (e.g. a live platform with no single launch date),
+  the date bracket may be omitted.
 - **Title** in bold; **Venue** in italics (`*NeurIPS 2023*`, `*ICLR 2024*`, or `*arXiv*`).
+  Use the **verbatim** title from the source (the arXiv title for papers, even if a blog
+  uses a different headline).
 - **Link group**: include only links that exist. Omit `[[code]]` / `[[project]]` when
-  there is none. Always include a `[[paper]]` link.
+  there is none. Most entries should carry a `[[paper]]` link; for non-paper entries
+  (open-source projects, vendor demos, blog announcements) use `[[code]]`, `[[site]]`,
+  or `[[blog]]` instead.
 - **Tags** are inline backtick code. Reuse existing tags where possible
-  (e.g. `#minecraft`, `#text-game`, `#planning`, `#memory`, `#tool-use`,
-  `#code-as-action`, `#multi-agent`, `#benchmark`). A paper may carry several tags.
+  (e.g. `#minecraft`, `#text-game`, `#planning`, `#memory`, `#skill-learning`,
+  `#tool-use`, `#code-as-action`, `#multi-agent`, `#benchmark`, `#vlm`, `#vla`,
+  `#foundation-policy`, `#world-model`, `#social-sim`, `#self-evolving`, `#npc`,
+  `#commercial`, `#3d-worlds`). A paper may carry several tags.
 - A paper may be **cross-listed** under more than one section if it is a landmark for
   multiple capabilities (e.g. Voyager under both Skill Learning and Tool Use).
 
