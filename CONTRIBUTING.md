@@ -44,7 +44,13 @@ Rules:
   (e.g. `#minecraft`, `#text-game`, `#planning`, `#memory`, `#skill-learning`,
   `#tool-use`, `#code-as-action`, `#multi-agent`, `#benchmark`, `#vlm`, `#vla`,
   `#foundation-policy`, `#world-model`, `#social-sim`, `#self-evolving`, `#npc`,
-  `#commercial`, `#3d-worlds`). A paper may carry several tags.
+  `#commercial`, `#3d-worlds`). A paper may carry several tags. **Method-paradigm
+  tags** (`#agentic`, `#vla`, `#post-training`, `#world-model`) are orthogonal to the
+  section layout: apply them based on the paper's actual method — `#agentic` for a
+  frozen foundation model in a perceive–plan–act orchestration loop, `#vla` for a
+  learned end-to-end vision→low-level-action policy, `#post-training` for SFT/RL/GRPO/
+  preference fine-tuning of a (V)LM, `#world-model` for learned/generative interactive
+  environments. Do not infer a paradigm from the title alone.
 - A paper may be **cross-listed** under more than one section if it is a landmark for
   multiple capabilities (e.g. Voyager under both Skill Learning and Tool Use).
 
