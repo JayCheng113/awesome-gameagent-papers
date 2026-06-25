@@ -238,7 +238,7 @@ For mistakes or suggestions, please open an issue.
 - [2025/04] **TALES: Text Adventure Learning Environment Suite** *arXiv* [[paper](https://arxiv.org/abs/2504.14128)] `#text-game` `#benchmark`
 - [2025/05] **lmgame-Bench: How Good are LLMs at Playing Games?** *arXiv* [[paper](https://arxiv.org/abs/2505.15146)] `#benchmark` `#vlm`
 - [2025/07] **StarDojo: Benchmarking Open-Ended Behaviors of Agentic Multimodal LLMs in Production-Living Simulations with Stardew Valley** *arXiv* [[paper](https://arxiv.org/abs/2507.07445)] `#benchmark` `#vlm`
-- [2026/02] **AI Gamestore: Scalable, Open-Ended Evaluation of Machine General Intelligence with Human Games** *arXiv* [[paper](https://arxiv.org/abs/2602.17594)] `#benchmark`
+- [2026/02] **AI Gamestore: Scalable, Open-Ended Evaluation of Machine General Intelligence with Human Games** *arXiv* [[paper](https://arxiv.org/abs/2602.17594)] `#benchmark` `#vlm`
 - [2026/04] **PokeGym: A Visually-Driven Long-Horizon Benchmark for Vision-Language Models** *arXiv* [[paper](https://arxiv.org/abs/2604.08340)] `#benchmark` `#vlm`
 - [2026/06] **OmniGameArena: A Unified UE5 Benchmark for VLM Game Agents with Improvement Dynamics** *arXiv* [[paper](https://arxiv.org/abs/2606.09826)] `#benchmark` `#vlm` `#3d-worlds`
 
