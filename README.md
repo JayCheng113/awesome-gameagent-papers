@@ -197,7 +197,7 @@ For mistakes or suggestions, please open an issue.
 - [2022/11] **Human-level play in the game of Diplomacy by combining language models with strategic reasoning (CICERO)** *Science* [[paper](https://www.science.org/doi/10.1126/science.ade9097)] `#diplomacy` `#multi-agent` `#post-training`
 - [2023/09] **Exploring Large Language Models for Communication Games: An Empirical Study on Werewolf** *arXiv* [[paper](https://arxiv.org/abs/2309.04658)] `#social-deduction` `#multi-agent` `#agentic`
 - [2024/07] **Werewolf Arena: A Case Study in LLM Evaluation via Social Deduction** *arXiv* [[paper](https://arxiv.org/abs/2407.13943)] `#werewolf` `#social-deduction` `#benchmark`
-- [2025/04] **Among Us: A Sandbox for Measuring and Detecting Agentic Deception** *arXiv* [[paper](https://arxiv.org/abs/2504.04072)] `#social-deduction` `#multi-agent` `#agentic`
+- [2025/04] **Among Us: A Sandbox for Measuring and Detecting Agentic Deception** *arXiv* [[paper](https://arxiv.org/abs/2504.04072)] `#social-deduction` `#multi-agent` `#benchmark`
 - [2025/04] **MultiMind: Enhancing Werewolf Agents with Multimodal Reasoning and Theory of Mind** *arXiv* [[paper](https://arxiv.org/abs/2504.18039)] `#werewolf` `#social-deduction` `#vlm` `#agentic`
 - [2025/09] **Can Large Language Models Master Complex Card Games?** *arXiv* [[paper](https://arxiv.org/abs/2509.01328)] `#card-game` `#strategy` `#post-training`
 - [2025/10] **Beyond Survival: Evaluating LLMs in Social Deduction Games with Human-Aligned Strategies** *arXiv* [[paper](https://arxiv.org/abs/2510.11389)] `#social-deduction` `#werewolf` `#benchmark`
@@ -234,8 +234,6 @@ For mistakes or suggestions, please open an issue.
 - [2026/01] **NitroGen: An Open Foundation Model for Generalist Gaming Agents** *arXiv* [[paper](https://arxiv.org/abs/2601.02427)] `#3d-worlds` `#foundation-policy` `#vla`
 - [2026/01] **Scaling Behavior Cloning Improves Causal Reasoning: An Open Model for Real-Time Video Game Playing** *arXiv* [[paper](https://arxiv.org/abs/2601.04575)] `#foundation-policy` `#vla`
 - [2026/05] **Odysseus: Scaling VLMs to 100+ Turn Decision-Making in Games via Reinforcement Learning** *arXiv* [[paper](https://arxiv.org/abs/2605.00347)] `#vlm` `#post-training`
-- [2026/01] **NitroGen: An Open Foundation Model for Generalist Gaming Agents** *arXiv* [[paper](https://arxiv.org/abs/2601.02427)] `#3d-worlds` `#foundation-policy` `#vla`
-- [2026/01] **Scaling Behavior Cloning Improves Causal Reasoning: An Open Model for Real-Time Video Game Playing** *arXiv* [[paper](https://arxiv.org/abs/2601.04575)] `#foundation-policy` `#vla`
 
 ## 7. Benchmarks & Environments
 
