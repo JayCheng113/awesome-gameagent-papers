@@ -72,10 +72,7 @@ For mistakes or suggestions, please open an issue.
 
 ## Latest Update
 
-- 2026/06/25: Citation-graph expansion (round 2) — +15 papers (card & social-deduction games, Minecraft VLA / post-training, generalist 3D-world policies, game benchmarks), each discovered via cited-by/reference traversal and arXiv-API verified for ID/title/date plus abstract-checked for scope and tags
-- 2026/06/25: Citation-graph expansion — +18 papers (Minecraft VLA / self-evolution, social-deduction games, generalist game foundation models, game benchmarks), each discovered via cited-by/reference traversal and arXiv-API verified for ID, title, and date
-- 2026/06/25: Added method-paradigm tags (`#agentic` / `#vla` / `#post-training` / `#world-model`) across ~60 method papers, each content-verified against the paper's abstract
-- 2026/06/25: Major expansion — ~75 vetted papers across 7 sections; added Minecraft, social-simulation, NPC/commercial, and environment sections 🔥
+- 2026/06/25: Major expansion — ~110 vetted papers across 7 sections, with method-paradigm tags (`#agentic` / `#vla` / `#post-training` / `#world-model`); added Minecraft, social-simulation, NPC/commercial, and environment sections 🔥
 - 2026/06/25: Initial release — skeleton + ~18 vetted seed papers across 8 capability topics
 
 ## 1. Surveys
