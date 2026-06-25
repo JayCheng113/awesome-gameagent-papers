@@ -72,6 +72,7 @@ For mistakes or suggestions, please open an issue.
 
 ## Latest Update
 
+- 2026/06/25: Citation-graph expansion (round 2) — +15 papers (card & social-deduction games, Minecraft VLA / post-training, generalist 3D-world policies, game benchmarks), each discovered via cited-by/reference traversal and arXiv-API verified for ID/title/date plus abstract-checked for scope and tags
 - 2026/06/25: Citation-graph expansion — +18 papers (Minecraft VLA / self-evolution, social-deduction games, generalist game foundation models, game benchmarks), each discovered via cited-by/reference traversal and arXiv-API verified for ID, title, and date
 - 2026/06/25: Added method-paradigm tags (`#agentic` / `#vla` / `#post-training` / `#world-model`) across ~60 method papers, each content-verified against the paper's abstract
 - 2026/06/25: Major expansion — ~75 vetted papers across 7 sections; added Minecraft, social-simulation, NPC/commercial, and environment sections 🔥
@@ -81,6 +82,7 @@ For mistakes or suggestions, please open an issue.
 
 - [2024/03] **A Survey on Game Playing Agents and Large Models: Methods, Applications, and Challenges** *arXiv* [[paper](https://arxiv.org/abs/2403.10249)] `#survey`
 - [2024/04] **A Survey on Large Language Model-Based Game Agents** *ACM CSUR* [[paper](https://arxiv.org/abs/2404.02039)] `#survey`
+- [2026/05] **Towards Generalist Game Players: An Investigation of Foundation Models in the Game Multiverse** *arXiv* [[paper](https://arxiv.org/abs/2605.09965)] `#survey`
 
 ## 2. Core Capabilities
 
@@ -122,8 +124,10 @@ For mistakes or suggestions, please open an issue.
 - [2025/02] **Optimus-2: Multimodal Minecraft Agent with Goal-Observation-Action Conditioned Policy** *CVPR 2025* [[paper](https://arxiv.org/abs/2502.19902)][[project](https://cybertronagent.github.io/Optimus-2.github.io/)] `#minecraft` `#vla`
 - [2025/03] **JARVIS-VLA: Post-Training Large-Scale Vision Language Models to Play Visual Games with Keyboards and Mouse** *ACL 2025* [[paper](https://arxiv.org/abs/2503.16365)][[code](https://github.com/CraftJarvis/JarvisVLA)][[project](https://craftjarvis.github.io/JarvisVLA/)] `#minecraft` `#vla` `#post-training`
 - [2025/03] **ROCKET-2: Steering Visuomotor Policy via Cross-View Goal Alignment** *arXiv* [[paper](https://arxiv.org/abs/2503.02505)] `#minecraft` `#foundation-policy` `#vla`
+- [2025/03] **Open-World Skill Discovery from Unsegmented Demonstrations** *arXiv* [[paper](https://arxiv.org/abs/2503.10684)] `#minecraft` `#skill-learning` `#vla`
 - [2025/06] **Optimus-3: Dual-Router Aligned Mixture-of-Experts Agent with Dual-Granularity Reasoning-Aware Policy Optimization** *arXiv* [[paper](https://arxiv.org/abs/2506.10357)] `#minecraft` `#vla` `#post-training`
 - [2025/09] **OpenHA: A Series of Open-Source Hierarchical Agentic Models in Minecraft** *arXiv* [[paper](https://arxiv.org/abs/2509.13347)] `#minecraft` `#foundation-policy` `#vla`
+- [2026/02] **MAIN-VLA: Modeling Abstraction of Intention and eNvironment for Vision-Language-Action Models** *arXiv* [[paper](https://arxiv.org/abs/2602.02212)] `#minecraft` `#vla`
 
 ### 3.2 Planning & Reasoning
 
@@ -136,6 +140,7 @@ For mistakes or suggestions, please open an issue.
 - [2025/05] **Experience-based Knowledge Correction for Robust Planning in Minecraft (XENON)** *ICLR 2026* [[paper](https://arxiv.org/abs/2505.24157)][[project](https://sjlee-me.github.io/XENON)] `#minecraft` `#planning` `#agentic`
 - [2025/05] **BAR: A Backward Reasoning based Agent for Complex Minecraft Tasks** *arXiv* [[paper](https://arxiv.org/abs/2505.14079)] `#minecraft` `#planning` `#agentic`
 - [2025/08] **VistaWise: Building Cost-Effective Agent with Cross-Modal Knowledge Graph for Minecraft** *arXiv* [[paper](https://arxiv.org/abs/2508.18722)] `#minecraft` `#planning` `#vlm` `#agentic`
+- [2025/12] **Training One Model to Master Cross-Level Agentic Actions via Reinforcement Learning** *arXiv* [[paper](https://arxiv.org/abs/2512.09706)] `#minecraft` `#post-training` `#planning`
 - [2026/05] **GROW: Aligning GRPO with State-Action Modeling for Open-World VLM Agents** *arXiv* [[paper](https://arxiv.org/abs/2605.20246)] `#minecraft` `#planning` `#vlm` `#post-training`
 - [2026/06] **WISE: A Long-Horizon Agent in Minecraft with Why-Which Reasoning** *arXiv* [[paper](https://arxiv.org/abs/2606.12852)] `#minecraft` `#planning` `#agentic`
 
@@ -158,6 +163,7 @@ For mistakes or suggestions, please open an issue.
 - [2025/09] **PillagerBench: Benchmarking LLM-Based Agents in Competitive Minecraft Team Environments** *arXiv* [[paper](https://arxiv.org/abs/2509.06235)] `#minecraft` `#multi-agent` `#benchmark`
 - [2026/02] **Requesting Expert Reasoning: Augmenting LLM Agents with Learned Collaborative Intervention (AHCE)** *arXiv* [[paper](https://arxiv.org/abs/2602.22546)] `#minecraft` `#multi-agent` `#agentic`
 - [2026/04] **Gated Coordination for Efficient Multi-Agent Collaboration in Minecraft Game** *arXiv* [[paper](https://arxiv.org/abs/2604.18975)] `#minecraft` `#multi-agent` `#agentic`
+- [2026/06] **Multi-agent Framework for Time-Sensitive Complementary Collaboration in Minecraft** *arXiv* [[paper](https://arxiv.org/abs/2606.15684)] `#minecraft` `#multi-agent` `#benchmark`
 
 ### 3.5 Tooling & Benchmarks
 
@@ -187,7 +193,11 @@ For mistakes or suggestions, please open an issue.
 - [2022/11] **Human-level play in the game of Diplomacy by combining language models with strategic reasoning (CICERO)** *Science* [[paper](https://www.science.org/doi/10.1126/science.ade9097)] `#diplomacy` `#multi-agent` `#agentic` `#post-training`
 - [2023/09] **Exploring Large Language Models for Communication Games: An Empirical Study on Werewolf** *arXiv* [[paper](https://arxiv.org/abs/2309.04658)] `#social-deduction` `#multi-agent` `#agentic`
 - [2025/10] **Beyond Survival: Evaluating LLMs in Social Deduction Games with Human-Aligned Strategies** *arXiv* [[paper](https://arxiv.org/abs/2510.11389)] `#social-deduction` `#werewolf` `#benchmark`
+- [2026/02] **One Model, All Roles: Multi-Turn, Multi-Agent Self-Play Reinforcement Learning for Conversational Social Intelligence** *arXiv* [[paper](https://arxiv.org/abs/2602.03109)] `#social-deduction` `#werewolf` `#multi-agent` `#post-training`
 - [2026/03] **Deception and Communication in Autonomous Multi-Agent Systems: An Experimental Study with Among Us** *arXiv* [[paper](https://arxiv.org/abs/2603.26635)] `#social-deduction` `#multi-agent` `#benchmark`
+- [2026/05] **Cattle Trade: A Multi-Agent Benchmark for LLM Bluffing, Bidding, and Bargaining** *arXiv* [[paper](https://arxiv.org/abs/2605.14537)] `#card-game` `#multi-agent` `#benchmark`
+- [2026/05] **QUACK: Questioning, Understanding, and Auditing Communicated Knowledge in Multimodal Social Deduction Agents** *arXiv* [[paper](https://arxiv.org/abs/2605.27068)] `#social-deduction` `#multi-agent` `#vlm` `#benchmark`
+- [2026/06] **Poker Arena: Multi-Axis Profiling of Strategic Reasoning and Memory in LLMs** *arXiv* [[paper](https://arxiv.org/abs/2606.13815)] `#card-game` `#strategy` `#benchmark`
 
 ## 5. NPC Dialogue & Commercial Agents
 
@@ -206,8 +216,11 @@ For mistakes or suggestions, please open an issue.
 - [2024/03] **Cradle: Empowering Foundation Agents Towards General Computer Control** *arXiv* [[paper](https://arxiv.org/abs/2403.03186)][[code](https://github.com/BAAI-Agents/Cradle)] `#gui-control` `#tool-use` `#agentic`
 - [2025/08] **Pixels to Play: A Foundation Model for 3D Gameplay** *arXiv* [[paper](https://arxiv.org/abs/2508.14295)][[code](https://github.com/elefant-ai/open-p2p)][[project](https://elefant-ai.github.io/open-p2p/)] `#3d-worlds` `#foundation-policy` `#vla`
 - [2025/10] **Game-TARS: Pretrained Foundation Models for Scalable Generalist Multimodal Game Agents** *arXiv* [[paper](https://arxiv.org/abs/2510.23691)] `#3d-worlds` `#foundation-policy` `#vla`
+- [2025/10] **Learning to play: A Multimodal Agent for 3D Game-Play** *arXiv* [[paper](https://arxiv.org/abs/2510.16774)] `#3d-worlds` `#foundation-policy` `#vla`
 - [2025/11] **SIMA 2: A Generalist Embodied Agent for Virtual Worlds** *Google DeepMind* [[paper](https://arxiv.org/abs/2512.04797)][[blog](https://deepmind.google/blog/sima-2-an-agent-that-plays-reasons-and-learns-with-you-in-virtual-3d-worlds/)] `#3d-worlds` `#vlm` `#vla` `#post-training`
+- [2025/11] **IPR-1: Interactive Physical Reasoner** *arXiv* [[paper](https://arxiv.org/abs/2511.15407)] `#3d-worlds` `#foundation-policy` `#world-model` `#vla`
 - [2026/01] **NitroGen: An Open Foundation Model for Generalist Gaming Agents** *arXiv* [[paper](https://arxiv.org/abs/2601.02427)] `#3d-worlds` `#foundation-policy` `#vla`
+- [2026/01] **Scaling Behavior Cloning Improves Causal Reasoning: An Open Model for Real-Time Video Game Playing** *arXiv* [[paper](https://arxiv.org/abs/2601.04575)] `#foundation-policy` `#vla`
 
 ## 7. Benchmarks & Environments
 
@@ -222,9 +235,12 @@ For mistakes or suggestions, please open an issue.
 - [2024/02] **Craftax: A Lightning-Fast Benchmark for Open-Ended Reinforcement Learning** *ICML 2024* [[paper](https://arxiv.org/abs/2402.16801)] `#benchmark`
 - [2024/11] **BALROG: Benchmarking Agentic LLM and VLM Reasoning On Games** *arXiv* [[paper](https://arxiv.org/abs/2411.13543)] `#benchmark` `#vlm` `#roguelike`
 - [2025/03] **DSGBench: A Diverse Strategic Game Benchmark for Evaluating LLM-based Agents in Complex Decision-Making Environments** *arXiv* [[paper](https://arxiv.org/abs/2503.06047)] `#benchmark`
+- [2025/04] **TALES: Text Adventure Learning Environment Suite** *arXiv* [[paper](https://arxiv.org/abs/2504.14128)] `#text-game` `#benchmark`
 - [2025/05] **lmgame-Bench: How Good are LLMs at Playing Games?** *arXiv* [[paper](https://arxiv.org/abs/2505.15146)] `#benchmark` `#vlm`
 - [2025/07] **StarDojo: Benchmarking Open-Ended Behaviors of Agentic Multimodal LLMs in Production-Living Simulations with Stardew Valley** *arXiv* [[paper](https://arxiv.org/abs/2507.07445)] `#benchmark` `#vlm`
+- [2026/02] **AI Gamestore: Scalable, Open-Ended Evaluation of Machine General Intelligence with Human Games** *arXiv* [[paper](https://arxiv.org/abs/2602.17594)] `#benchmark`
 - [2026/04] **PokeGym: A Visually-Driven Long-Horizon Benchmark for Vision-Language Models** *arXiv* [[paper](https://arxiv.org/abs/2604.08340)] `#benchmark` `#vlm`
+- [2026/06] **OmniGameArena: A Unified UE5 Benchmark for VLM Game Agents with Improvement Dynamics** *arXiv* [[paper](https://arxiv.org/abs/2606.09826)] `#benchmark` `#vlm` `#3d-worlds`
 
 ### 7.2 Classic Pre-LLM Milestones
 
