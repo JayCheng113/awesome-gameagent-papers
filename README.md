@@ -219,7 +219,7 @@ For mistakes or suggestions, please open an issue.
 ### 4.2 Communication & Strategic Games
 
 - [2022/11] **Human-level play in the game of Diplomacy by combining language models with strategic reasoning (CICERO)** *Science* [[paper](https://www.science.org/doi/10.1126/science.ade9097)] `#diplomacy` `#multi-agent` `#post-training`
-- [2023/09] **Exploring Large Language Models for Communication Games: An Empirical Study on Werewolf** *arXiv* [[paper](https://arxiv.org/abs/2309.04658)] `#social-deduction` `#multi-agent` `#agentic`
+- [2023/09] **Exploring Large Language Models for Communication Games: An Empirical Study on Werewolf** *arXiv* [[paper](https://arxiv.org/abs/2309.04658)] `#werewolf` `#social-deduction` `#multi-agent` `#agentic`
 - [2023/10] **Language Agents with Reinforcement Learning for Strategic Play in the Werewolf Game** *arXiv* [[paper](https://arxiv.org/abs/2310.18940)] `#post-training` `#werewolf` `#social-deduction` `#strategy`
 - [2023/10] **AvalonBench: Evaluating LLMs Playing the Game of Avalon** *arXiv* [[paper](https://arxiv.org/abs/2310.05036)] `#benchmark` `#social-deduction` `#multi-agent`
 - [2023/10] **LLM-Coordination: Evaluating and Analyzing Multi-agent Coordination Abilities in Large Language Models** *arXiv* [[paper](https://arxiv.org/abs/2310.03903)] `#benchmark` `#multi-agent`
