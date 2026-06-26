@@ -230,7 +230,7 @@ For mistakes or suggestions, please open an issue.
 - [2024/07] **Werewolf Arena: A Case Study in LLM Evaluation via Social Deduction** *arXiv* [[paper](https://arxiv.org/abs/2407.13943)] `#werewolf` `#social-deduction` `#benchmark`
 - [2024/09] **StarCraft II Arena: Evaluating LLMs in Strategic Planning, Real-Time Decision Making, and Adaptability** *arXiv* [[paper](https://openreview.net/forum?id=o3V7OuPxu4)] `#benchmark` `#starcraft` `#strategy`
 - [2024/10] **TMGBench: A Systematic Game Benchmark for Evaluating Strategic Reasoning Abilities of LLMs** *arXiv* [[paper](https://arxiv.org/abs/2410.10479)] `#benchmark` `#strategy`
-- [2025/01] **Complete Chess Games Enable LLM Become A Chess Master** *arXiv* [[paper](https://arxiv.org/abs/2501.17186)] `#benchmark` `#strategy`
+- [2025/01] **Complete Chess Games Enable LLM Become A Chess Master** *arXiv* [[paper](https://arxiv.org/abs/2501.17186)] `#post-training` `#strategy`
 - [2025/01] **PokerBench: Training Large Language Models to become Professional Poker Players** *arXiv* [[paper](https://arxiv.org/abs/2501.08328)] `#benchmark` `#card-game`
 - [2025/02] **Learning Strategic Language Agents in the Werewolf Game with Iterative Latent Space Policy Optimization** *arXiv* [[paper](https://arxiv.org/abs/2502.04686)] `#post-training` `#werewolf` `#strategy`
 - [2025/02] **Reflection of Episodes: Learning to Play Game from Expert and Self Experiences** *arXiv* [[paper](https://arxiv.org/abs/2502.13388)] `#agentic` `#starcraft`
@@ -255,7 +255,7 @@ For mistakes or suggestions, please open an issue.
 - [2026/01] **LLMs as Rules Oracles: Exploring Real-World Multimodal Reasoning in Tabletop Strategy Game Environments** *ICLR 2026* [[paper](https://openreview.net/forum?id=TOgQ00DEek)] `#benchmark` `#strategy` `#vlm`
 - [2026/01] **Multicultural Spyfall: Assessing LLMs through Dynamic Multilingual Social Deduction Game** *arXiv* [[paper](https://arxiv.org/abs/2601.09017)] `#benchmark` `#social-deduction`
 - [2026/01] **TowerMind: A Tower Defence Game Learning Environment and Benchmark for LLM as Agents** *arXiv* [[paper](https://arxiv.org/abs/2601.05899)] `#benchmark` `#strategy` `#vlm`
-- [2026/01] **Mixing Expert Knowledge: Bring Human Thoughts Back To the Game of Go** *arXiv* [[paper](https://arxiv.org/abs/2601.16447)] `#benchmark` `#strategy`
+- [2026/01] **Mixing Expert Knowledge: Bring Human Thoughts Back To the Game of Go** *arXiv* [[paper](https://arxiv.org/abs/2601.16447)] `#post-training` `#strategy` `#benchmark`
 - [2026/02] **One Model, All Roles: Multi-Turn, Multi-Agent Self-Play Reinforcement Learning for Conversational Social Intelligence** *arXiv* [[paper](https://arxiv.org/abs/2602.03109)] `#social-deduction` `#werewolf` `#multi-agent` `#post-training`
 - [2026/02] **VAM: Verbalized Action Masking for Controllable Exploration in RL Post-Training -- A Chess Case Study** *arXiv* [[paper](https://arxiv.org/abs/2602.16833)] `#post-training` `#strategy`
 - [2026/02] **Implicit Strategic Optimization: Rethinking Long-Horizon Decision-Making in Adversarial Poker Environments** *arXiv* [[paper](https://arxiv.org/abs/2602.08041)] `#post-training` `#card-game` `#strategy`
