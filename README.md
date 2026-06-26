@@ -228,7 +228,7 @@ For mistakes or suggestions, please open an issue.
 - [2024/03] **How Far Are We on the Decision-Making of LLMs? Evaluating LLMs' Gaming Ability in Multi-Agent Environments** *arXiv* [[paper](https://arxiv.org/abs/2403.11807)] `#benchmark` `#multi-agent`
 - [2024/06] **GameBench: Evaluating Strategic Reasoning Abilities of LLM Agents** *arXiv* [[paper](https://arxiv.org/abs/2406.06613)] `#benchmark` `#strategy`
 - [2024/07] **Werewolf Arena: A Case Study in LLM Evaluation via Social Deduction** *arXiv* [[paper](https://arxiv.org/abs/2407.13943)] `#werewolf` `#social-deduction` `#benchmark`
-- [2024/09] **StarCraft II Arena: Evaluating LLMs in Strategic Planning, Real-Time Decision Making, and Adaptability** *arXiv* [[paper](https://openreview.net/forum?id=o3V7OuPxu4)] `#benchmark` `#starcraft` `#strategy`
+- [2024/09] **StarCraft II Arena: Evaluating LLMs in Strategic Planning, Real-Time Decision Making, and Adaptability** *OpenReview* [[paper](https://openreview.net/forum?id=o3V7OuPxu4)] `#benchmark` `#starcraft` `#strategy`
 - [2024/10] **TMGBench: A Systematic Game Benchmark for Evaluating Strategic Reasoning Abilities of LLMs** *arXiv* [[paper](https://arxiv.org/abs/2410.10479)] `#benchmark` `#strategy`
 - [2025/01] **Complete Chess Games Enable LLM Become A Chess Master** *arXiv* [[paper](https://arxiv.org/abs/2501.17186)] `#post-training` `#strategy`
 - [2025/01] **PokerBench: Training Large Language Models to become Professional Poker Players** *arXiv* [[paper](https://arxiv.org/abs/2501.08328)] `#benchmark` `#card-game`
