@@ -48,9 +48,11 @@ Rules:
   tags** (`#agentic`, `#vla`, `#post-training`, `#world-model`) are orthogonal to the
   section layout: apply them based on the paper's actual method — `#agentic` for a
   frozen foundation model in a perceive–plan–act orchestration loop, `#vla` for a
-  learned end-to-end vision→low-level-action policy, `#post-training` for SFT/RL/GRPO/
-  preference fine-tuning of a (V)LM, `#world-model` for learned/generative interactive
-  environments. Do not infer a paradigm from the title alone.
+  learned policy mapping language instructions plus visual observations to low-level
+  actions (use `#foundation-policy` for a language-free vision→action policy),
+  `#post-training` for SFT/RL/GRPO/preference fine-tuning of a (V)LM, `#world-model`
+  for learned/generative interactive environments. Do not infer a paradigm from the
+  title alone.
 - A paper may be **cross-listed** under more than one section if it is a landmark for
   multiple capabilities (e.g. Voyager under both Skill Learning and Tool Use).
 
