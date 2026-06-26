@@ -72,9 +72,7 @@ For mistakes or suggestions, please open an issue.
 
 ## Latest Update
 
-- 2026/06/25: Survey integration — cross-referenced THUSI-Lab/Awesome-LFMs-Play-Games and arXiv:2605.09965, adding 108 independently re-verified papers (→239 total) and an Acknowledgements section 🔥
-- 2026/06/25: Major expansion — ~110 vetted papers across 7 sections, with method-paradigm tags (`#agentic` / `#vla` / `#post-training` / `#world-model`); added Minecraft, social-simulation, NPC/commercial, and environment sections 🔥
-- 2026/06/25: Initial release — skeleton + ~18 vetted seed papers across 8 capability topics
+- 2026/06: 239 vetted papers across 7 sections with method-paradigm tags (`#agentic` / `#vla` / `#post-training` / `#world-model`) and verified publication venues, cross-referenced with the survey arXiv:2605.09965 and THUSI-Lab/Awesome-LFMs-Play-Games (see Acknowledgements) 🔥
 
 ## 1. Surveys
 
