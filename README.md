@@ -72,7 +72,7 @@ For mistakes or suggestions, please open an issue.
 
 ## Latest Update
 
-- 2026/06: 239 vetted papers across 7 sections with method-paradigm tags (`#agentic` / `#vla` / `#post-training` / `#world-model`) and verified publication venues, cross-referenced with the survey arXiv:2605.09965 and THUSI-Lab/Awesome-LFMs-Play-Games (see Acknowledgements) 🔥
+- 2026/06: 243 vetted papers across 7 sections with method-paradigm tags (`#agentic` / `#vla` / `#post-training` / `#world-model`) and verified publication venues, cross-referenced with the survey arXiv:2605.09965 and THUSI-Lab/Awesome-LFMs-Play-Games (see Acknowledgements) 🔥
 
 ## 1. Surveys
 
@@ -177,6 +177,7 @@ For mistakes or suggestions, please open an issue.
 
 ### 3.4 Multi-Agent & Collaboration
 
+- [2024/03] **MineLand: Simulating Large-Scale Multi-Agent Interactions with Limited Multimodal Senses and Physical Needs** *arXiv* [[paper](https://arxiv.org/abs/2403.19267)] `#minecraft` `#multi-agent` `#benchmark`
 - [2024/06] **VillagerAgent: A Graph-Based Multi-Agent Framework for Coordinating Complex Task Dependencies in Minecraft** *ACL 2024 Findings* [[paper](https://arxiv.org/abs/2406.05720)] `#minecraft` `#multi-agent` `#agentic` `#benchmark`
 - [2024/11] **MindForge: Empowering Embodied Agents with Theory of Mind for Lifelong Cultural Learning** *NeurIPS 2025* [[paper](https://arxiv.org/abs/2411.12977)] `#minecraft` `#multi-agent` `#agentic`
 - [2024/12] **TeamCraft: A Benchmark for Multi-Modal Multi-Agent Systems in Minecraft** *arXiv* [[paper](https://arxiv.org/abs/2412.05255)][[code](https://github.com/teamcraft-bench/teamcraft)] `#minecraft` `#multi-agent` `#benchmark`
@@ -207,6 +208,7 @@ For mistakes or suggestions, please open an issue.
 - [2023/04] **Generative Agents: Interactive Simulacra of Human Behavior** *UIST 2023* [[paper](https://arxiv.org/abs/2304.03442)] `#social-sim` `#multi-agent` `#memory` `#agentic`
 - [2023/08] **AI Town: A Deployable Starter Kit for Building AI Agent Societies** *GitHub* [[code](https://github.com/a16z-infra/ai-town)] `#social-sim` `#multi-agent` `#agentic`
 - [2023/08] **AgentVerse: Facilitating Multi-Agent Collaboration and Exploring Emergent Behaviors** *ICLR 2024* [[paper](https://arxiv.org/abs/2308.10848)] `#agentic` `#multi-agent`
+- [2023/10] **Lyfe Agents: Generative agents for low-cost real-time social interactions** *arXiv* [[paper](https://arxiv.org/abs/2310.02172)] `#social-sim` `#multi-agent` `#memory` `#agentic`
 - [2023/12] **Generative agent-based modeling with actions grounded in physical, social, or digital space using Concordia** *arXiv* [[paper](https://arxiv.org/abs/2312.03664)] `#social-sim` `#multi-agent` `#agentic`
 - [2024/10] **Project Sid: Many-agent simulations toward AI civilization** *arXiv* [[paper](https://arxiv.org/abs/2411.00114)] `#minecraft` `#social-sim` `#multi-agent` `#agentic`
 - [2025/10] **Stronger-MAS: Multi-Agent Reinforcement Learning for Collaborative LLMs** *arXiv* [[paper](https://arxiv.org/abs/2510.11062)] `#post-training` `#multi-agent`
@@ -217,6 +219,8 @@ For mistakes or suggestions, please open an issue.
 ### 4.2 Communication & Strategic Games
 
 - [2022/11] **Human-level play in the game of Diplomacy by combining language models with strategic reasoning (CICERO)** *Science* [[paper](https://www.science.org/doi/10.1126/science.ade9097)] `#diplomacy` `#multi-agent` `#post-training`
+- [2023/08] **ProAgent: Building Proactive Cooperative Agents with Large Language Models** *AAAI 2024* [[paper](https://arxiv.org/abs/2308.11339)] `#multi-agent` `#agentic`
+- [2023/09] **Suspicion-Agent: Playing Imperfect Information Games with Theory of Mind Aware GPT-4** *arXiv* [[paper](https://arxiv.org/abs/2309.17277)] `#card-game` `#agentic` `#strategy`
 - [2023/09] **Exploring Large Language Models for Communication Games: An Empirical Study on Werewolf** *arXiv* [[paper](https://arxiv.org/abs/2309.04658)] `#werewolf` `#social-deduction` `#multi-agent` `#agentic`
 - [2023/10] **Language Agents with Reinforcement Learning for Strategic Play in the Werewolf Game** *ICML 2024* [[paper](https://arxiv.org/abs/2310.18940)] `#post-training` `#werewolf` `#social-deduction` `#strategy`
 - [2023/10] **AvalonBench: Evaluating LLMs Playing the Game of Avalon** *arXiv* [[paper](https://arxiv.org/abs/2310.05036)] `#benchmark` `#social-deduction` `#multi-agent`
